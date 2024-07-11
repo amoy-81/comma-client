@@ -12,7 +12,7 @@ declare module "next-auth" {
       createdAt: string;
       updatedAt: string;
 
-      token: string;
+      accessToken: string;
       refreshToken: string;
     };
   }

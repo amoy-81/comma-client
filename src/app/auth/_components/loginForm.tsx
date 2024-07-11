@@ -21,7 +21,7 @@ export default function LoginForm() {
     }).then((result) => {
       if (result?.ok) {
         // router.replace("/");
-        console.log("Good")
+        console.log("Good");
       } else {
         setError(result?.error || "Login is failed");
       }

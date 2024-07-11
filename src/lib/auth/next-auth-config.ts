@@ -10,7 +10,7 @@ const tokensParser = (responsJson: any, responseCookies: string[]) => {
   // Extract access token and refresh token from the cookies
   tokens.forEach((token) => {
     if (token?.a_t) {
-      responsJson.token = token.a_t;
+      responsJson.accessToken = token.a_t;
     } else if (token?.r_t) {
       responsJson.refreshToken = token.r_t;
       responsJson["Max-Age"] = token["Max-Age"];
@@ -19,7 +19,7 @@ const tokensParser = (responsJson: any, responseCookies: string[]) => {
 };
 
 // Define the NextAuth options
-const options: NextAuthOptions = {
+export const options: NextAuthOptions = {
   providers: [
     // Set up the credentials provider for custom email/password login
     CredentialsProvider({
