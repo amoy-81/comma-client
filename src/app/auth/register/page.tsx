@@ -1,6 +1,5 @@
 import Link from "next/link";
 import GoogleLoginBotton from "../_components/GoogleLoginBotton";
-import LoginForm from "../_components/loginForm";
 import RegisterForm from "../_components/RegisterForm";
 
 export default function RegisterPage() {
