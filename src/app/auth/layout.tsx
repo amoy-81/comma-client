@@ -8,8 +8,8 @@ export default function AuthLayout({
     <div className="flex h-screen">
       <div className="hidden lg:flex items-center justify-center flex-1 text-gray-300 ">
         <div className="max-w-md text-center">
-          <h2 className=" text-left mb-4 text-3xl">comma...</h2>
-          <Image src={AuthBanner} alt="Banner" />
+          <h2 className=" text-left mb-4 text-3xl">Comma...</h2>
+          <Image src={AuthBanner} alt="Banner" priority={true} />
         </div>
       </div>
       <div className=" relative w-full lg:w-1/2 flex items-center justify-center">

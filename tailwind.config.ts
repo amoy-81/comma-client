@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import colors from "tailwindcss/colors";
+import colors, { rose } from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -24,6 +24,7 @@ const config: Config = {
       pink: colors.fuchsia,
       blue: colors.blue,
       red: colors.red,
+      rose: colors.rose,
     },
   },
   plugins: [],
